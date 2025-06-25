@@ -5,7 +5,7 @@ namespace PegasusExportPlugin
 {
     class ProgramEntry : ISystemMenuItemPlugin
     {
-        public string Caption => "Pegasus Export";
+        public string Caption => "Export to Pegasus";
 
         public Image IconImage => null;
 

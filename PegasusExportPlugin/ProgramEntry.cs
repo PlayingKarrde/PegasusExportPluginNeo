@@ -1,5 +1,4 @@
-﻿using PegasusExportPlugin.Properties;
-using System.Drawing;
+﻿using System.Drawing;
 using Unbroken.LaunchBox.Plugins;
 
 namespace PegasusExportPlugin
@@ -8,7 +7,7 @@ namespace PegasusExportPlugin
     {
         public string Caption => "Pegasus Export";
 
-        public Image IconImage => Resources.favicon96;
+        public Image IconImage => null;
 
         public bool ShowInLaunchBox => true;
 

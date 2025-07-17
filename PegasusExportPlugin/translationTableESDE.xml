@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<translationTable>
+  <platforms>
+    <!-- Nintendo Systems -->
+    <platform from="Nintendo Entertainment System" to="nes" />
+    <platform from="Nintendo Famicom" to="famicom" />
+    <platform from="Nintendo Famicom Disk System" to="fds" />
+    <platform from="Super Nintendo Entertainment System" to="snes" />
+    <platform from="Super Famicom" to="sfc" />
+    <platform from="Nintendo 64" to="n64" />
+    <platform from="Nintendo 64DD" to="n64dd" />
+    <platform from="Nintendo GameCube" to="gc" />
+    <platform from="Nintendo Wii" to="wii" />
+    <platform from="Nintendo Wii U" to="wiiu" />
+    <platform from="Nintendo Switch" to="switch" />
+    <platform from="Nintendo Game Boy" to="gb" />
+    <platform from="Nintendo Game Boy Color" to="gbc" />
+    <platform from="Nintendo Game Boy Advance" to="gba" />
+    <platform from="Nintendo DS" to="nds" />
+    <platform from="Nintendo 3DS" to="n3ds" />
+    <platform from="Nintendo Virtual Boy" to="virtualboy" />
+    <platform from="Nintendo Game &amp; Watch" to="gameandwatch" />
+    <platform from="Nintendo Pokemon Mini" to="pokemini" />
+
+    <!-- Sony Systems -->
+    <platform from="Sony PlayStation" to="psx" />
+    <platform from="Sony PlayStation 2" to="ps2" />
+    <platform from="Sony PlayStation 3" to="ps3" />
+    <platform from="Sony PlayStation 4" to="ps4" />
+    <platform from="Sony PlayStation Portable" to="psp" />
+    <platform from="Sony PlayStation Vita" to="psvita" />
+
+    <!-- Sega Systems -->
+    <platform from="Sega Master System" to="mastersystem" />
+    <platform from="Sega Genesis" to="genesis" />
+    <platform from="Sega Mega Drive" to="megadrive" />
+    <platform from="Sega Game Gear" to="gamegear" />
+    <platform from="Sega CD" to="segacd" />
+    <platform from="Sega Mega-CD" to="megacd" />
+    <platform from="Sega 32X" to="sega32x" />
+    <platform from="Sega Saturn" to="saturn" />
+    <platform from="Sega Dreamcast" to="dreamcast" />
+    <platform from="Sega SG-1000" to="sg-1000" />
+    <platform from="Sega Pico" to="pico8" />
+
+    <!-- Atari Systems -->
+    <platform from="Atari 2600" to="atari2600" />
+    <platform from="Atari 5200" to="atari5200" />
+    <platform from="Atari 7800" to="atari7800" />
+    <platform from="Atari 800" to="atari800" />
+    <platform from="Atari XE" to="atarixe" />
+    <platform from="Atari ST" to="atarist" />
+    <platform from="Atari Jaguar" to="atarijaguar" />
+    <platform from="Atari Jaguar CD" to="atarijaguarcd" />
+    <platform from="Atari Lynx" to="atarilynx" />
+
+    <!-- NEC Systems -->
+    <platform from="NEC TurboGrafx-16" to="tg16" />
+    <platform from="NEC TurboGrafx-CD" to="tg-cd" />
+    <platform from="NEC PC Engine" to="pcengine" />
+    <platform from="NEC PC Engine CD" to="pcenginecd" />
+    <platform from="NEC SuperGrafx" to="supergrafx" />
+    <platform from="NEC PC-FX" to="pcfx" />
+    <platform from="NEC PC-88" to="pc88" />
+    <platform from="NEC PC-98" to="pc98" />
+
+    <!-- SNK Systems -->
+    <platform from="SNK Neo Geo" to="neogeo" />
+    <platform from="SNK Neo Geo CD" to="neogeocd" />
+    <platform from="SNK Neo Geo Pocket" to="ngp" />
+    <platform from="SNK Neo Geo Pocket Color" to="ngpc" />
+
+    <!-- Computer Systems -->
+    <platform from="Commodore 64" to="c64" />
+    <platform from="Commodore 16" to="c16" />
+    <platform from="Commodore VIC-20" to="vic20" />
+    <platform from="Commodore Amiga" to="amiga" />
+    <platform from="Commodore Amiga 600" to="amiga600" />
+    <platform from="Commodore Amiga 1200" to="amiga1200" />
+    <platform from="Commodore Amiga CD32" to="amigacd32" />
+    <platform from="Commodore CDTV" to="cdtv" />
+    <platform from="Apple II" to="apple2" />
+    <platform from="Apple IIGS" to="apple2gs" />
+    <platform from="Macintosh" to="macintosh" />
+    <platform from="MS-DOS" to="dos" />
+    <platform from="PC" to="pc" />
+    <platform from="Windows" to="pc" />
+    <platform from="MSX" to="msx" />
+    <platform from="MSX2" to="msx2" />
+    <platform from="MSX Turbo R" to="msxturbor" />
+    <platform from="Amstrad CPC" to="amstradcpc" />
+    <platform from="ZX Spectrum" to="zxspectrum" />
+    <platform from="ZX81" to="zx81" />
+    <platform from="BBC Micro" to="bbcmicro" />
+    <platform from="Dragon 32" to="dragon32" />
+    <platform from="TRS-80" to="trs-80" />
+    <platform from="TI-99/4A" to="ti99" />
+    <platform from="Thomson TO8" to="to8" />
+    <platform from="Sharp X1" to="x1" />
+    <platform from="Sharp X68000" to="x68000" />
+    <platform from="FM Towns" to="fmtowns" />
+    <platform from="Oric" to="oric" />
+    <platform from="SAM Coupé" to="samcoupe" />
+    <platform from="Spectravideo" to="spectravideo" />
+
+    <!-- Arcade -->
+    <platform from="Arcade" to="arcade" />
+    <platform from="MAME" to="mame" />
+    <platform from="FinalBurn Neo" to="fbneo" />
+    <platform from="CPS-1" to="cps1" />
+    <platform from="CPS-2" to="cps2" />
+    <platform from="CPS-3" to="cps3" />
+    <platform from="Cave" to="cave" />
+    <platform from="Atomiswave" to="atomiswave" />
+    <platform from="Naomi" to="naomi" />
+    <platform from="Naomi 2" to="naomi2" />
+    <platform from="Naomi GD-ROM" to="naomigd" />
+    <platform from="Model 2" to="model2" />
+    <platform from="Model 3" to="model3" />
+    <platform from="Daphne" to="daphne" />
+
+    <!-- Other Consoles -->
+    <platform from="Mattel Intellivision" to="intellivision" />
+    <platform from="ColecoVision" to="colecovision" />
+    <platform from="Magnavox Odyssey 2" to="odyssey2" />
+    <platform from="Fairchild Channel F" to="channelf" />
+    <platform from="Bally Astrocade" to="astrocde" />
+    <platform from="Emerson Arcadia 2001" to="arcadia" />
+    <platform from="CreatiVision" to="crvision" />
+    <platform from="Tandy Color Computer" to="coco" />
+    <platform from="Vectrex" to="vectrex" />
+    <platform from="3DO Interactive Multiplayer" to="3do" />
+    <platform from="Philips CD-i" to="cdimono1" />
+    <platform from="Panasonic 3DO" to="3do" />
+    <platform from="Bandai WonderSwan" to="wonderswan" />
+    <platform from="Bandai WonderSwan Color" to="wonderswancolor" />
+    <platform from="Watara Supervision" to="supervision" />
+    <platform from="Game.com" to="gamecom" />
+    <platform from="Mega Duck" to="megaduck" />
+    <platform from="PV-1000" to="pv1000" />
+    <platform from="Casio PV-1000" to="pv1000" />
+    <platform from="VTech V.Smile" to="vsmile" />
+    <platform from="Uzebox" to="uzebox" />
+    <platform from="Arduboy" to="arduboy" />
+
+    <!-- Modern Systems -->
+    <platform from="Microsoft Xbox" to="xbox" />
+    <platform from="Microsoft Xbox 360" to="xbox360" />
+    <platform from="Steam" to="steam" />
+    <platform from="Android" to="android" />
+    <platform from="Flash" to="flash" />
+    <platform from="J2ME" to="j2me" />
+    <platform from="Palm" to="palm" />
+    <platform from="Symbian" to="symbian" />
+
+    <!-- Game Engines / Special -->
+    <platform from="ScummVM" to="scummvm" />
+    <platform from="DOOM" to="doom" />
+    <platform from="Quake" to="quake" />
+    <platform from="OpenBOR" to="openbor" />
+    <platform from="Solarus" to="solarus" />
+    <platform from="EasyRPG" to="easyrpg" />
+    <platform from="PICO-8" to="pico8" />
+    <platform from="TIC-80" to="tic80" />
+    <platform from="ChaiLove" to="chailove" />
+    <platform from="Lutro" to="lutro" />
+    <platform from="Cave Story" to="cavestory" />
+    <platform from="WASM-4" to="wasm4" />
+    <platform from="Z-Machine" to="zmachine" />
+    <platform from="Stratagus" to="stratagus" />
+    <platform from="MUGEN" to="mugen" />
+    <platform from="AGS" to="ags" />
+    <platform from="Kodi" to="kodi" />
+  </platforms>
+</translationTable>

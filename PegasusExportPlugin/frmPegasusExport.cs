@@ -31,7 +31,52 @@ namespace PegasusExportPlugin
         private IDataManager _dataManager = PluginHelper.DataManager;
 
         private Dictionary<string, string> _imageTypeDictionary = new Dictionary<string,string>();
-       
+
+        private string GetPlatformFolderName(string platformName, bool useESDE = false)
+        {
+            string translatedName = platformName;
+
+            if (useESDE)
+            {
+                translatedName = ApplyESDETranslationTable(platformName);
+            }
+
+            // Sanitize for folder name
+            var result = string.Concat(translatedName.Split(Path.GetInvalidFileNameChars()));
+            return result;
+        }
+
+        private string ApplyESDETranslationTable(string platformName)
+        {
+            try
+            {
+                var esdePath = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "translationTableESDE.xml");
+                if (!File.Exists(esdePath))
+                {
+                    return platformName;
+                }
+
+                var esdeTable = XElement.Load(esdePath);
+
+                // Look for platform under platforms node
+                var platformMapping = esdeTable
+                    .Element("platforms")?
+                    .Elements("platform")
+                    .FirstOrDefault(p => p.Attribute("from")?.Value == platformName);
+
+                if (platformMapping != null)
+                {
+                    var translatedName = platformMapping.Attribute("to")?.Value ?? platformName;
+                    return translatedName;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Translation error: {ex.Message}");
+            }
+
+            return platformName;
+        }
 
         public string GetRelativePath(string relativeTo, string path)
         {
@@ -139,7 +184,8 @@ namespace PegasusExportPlugin
                     Parallel.ForEach(gamesByPlatform, gamePlatform =>
                     {
                         var platform = gamePlatform.Key.Platform;
-                        var platformFolderName = string.Concat(platform.Split(Path.GetInvalidFileNameChars()));
+                        //var platformFolderName = string.Concat(platform.Split(Path.GetInvalidFileNameChars()));
+                        var platformFolderName = GetPlatformFolderName(platform, chkESDE.Checked);
                         var platformPath = Path.Combine(selectedFolder, platformFolderName);
                         Directory.CreateDirectory(platformPath);
                         var metadataBuilder = new StringBuilder();
@@ -586,7 +632,7 @@ namespace PegasusExportPlugin
                 clbAssetList.SetItemChecked(i,true);
             }
 
-            var platformList = new BindingList<Launchbox.PlatformSetting>(_dataManager.GetAllPlatforms().Select(platform => new Launchbox.PlatformSetting() { Name = platform.Name }).ToList());
+            var platformList = new BindingList<Launchbox.PlatformSetting>(_dataManager.GetAllPlatforms().OrderBy(platform => platform.Name).Select(platform => new Launchbox.PlatformSetting() { Name = platform.Name }).ToList());
             dgvPlatforms.AutoGenerateColumns = false;
             dgvPlatforms.DataSource = platformList;
 

@@ -16,5 +16,6 @@ namespace PegasusExportPlugin.Pegasus
         public static string Logo => "logo";
         public static string Background => "background";
         public static string Video => "video";
+        public static string Square => "square";
     }
 }

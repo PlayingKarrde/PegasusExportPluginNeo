@@ -123,6 +123,10 @@
       <value>screenshots</value>
     </asset>
     <asset>
+      <key>Square</key>
+      <value>square</value>
+    </asset>
+    <asset>
       <key>Steam Banner</key>
       <value>steam</value>
       <resolutions>

@@ -53,16 +53,12 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.chkSingleExport = new System.Windows.Forms.CheckBox();
             this.dgvPlatforms = new System.Windows.Forms.DataGridView();
-            this.colSelected = new PegasusExportPlugin.Controls.DataGridViewHeaderCheckBoxColumn();
-            this.colPlatform = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colMetaData = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.colAssets = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.colApplication = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.dataGridViewHeaderCheckBoxColumn1 = new PegasusExportPlugin.Controls.DataGridViewHeaderCheckBoxColumn();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.chkESDE = new System.Windows.Forms.CheckBox();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.dgvPlaylists = new System.Windows.Forms.DataGridView();
             this.colSelected2 = new PegasusExportPlugin.Controls.DataGridViewHeaderCheckBoxColumn();
@@ -76,6 +72,11 @@
             this.radAbsoluteApplication = new System.Windows.Forms.RadioButton();
             this.radLinkApplication = new System.Windows.Forms.RadioButton();
             this.radCopyApplication = new System.Windows.Forms.RadioButton();
+            this.colSelected = new PegasusExportPlugin.Controls.DataGridViewHeaderCheckBoxColumn();
+            this.colPlatform = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colMetaData = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.colAssets = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.colApplication = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.gbAssetPath.SuspendLayout();
@@ -344,7 +345,7 @@
             this.clbAssetList.Location = new System.Drawing.Point(4, 20);
             this.clbAssetList.Margin = new System.Windows.Forms.Padding(4);
             this.clbAssetList.Name = "clbAssetList";
-            this.clbAssetList.Size = new System.Drawing.Size(223, 174);
+            this.clbAssetList.Size = new System.Drawing.Size(223, 208);
             this.clbAssetList.TabIndex = 0;
             // 
             // radAutoChoose
@@ -371,7 +372,7 @@
             this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox3.Size = new System.Drawing.Size(141, 160);
+            this.groupBox3.Size = new System.Drawing.Size(141, 119);
             this.groupBox3.TabIndex = 12;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Duplicate Assets";
@@ -414,56 +415,6 @@
             this.dgvPlatforms.ShowEditingIcon = false;
             this.dgvPlatforms.Size = new System.Drawing.Size(1000, 419);
             this.dgvPlatforms.TabIndex = 13;
-            // 
-            // colSelected
-            // 
-            this.colSelected.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.colSelected.DataPropertyName = "Selected";
-            this.colSelected.HeaderCheckBox = true;
-            this.colSelected.HeaderText = "";
-            this.colSelected.MinimumWidth = 40;
-            this.colSelected.Name = "colSelected";
-            this.colSelected.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.colSelected.Width = 40;
-            // 
-            // colPlatform
-            // 
-            this.colPlatform.DataPropertyName = "Name";
-            this.colPlatform.HeaderText = "Platform";
-            this.colPlatform.MinimumWidth = 6;
-            this.colPlatform.Name = "colPlatform";
-            this.colPlatform.ReadOnly = true;
-            this.colPlatform.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // colMetaData
-            // 
-            this.colMetaData.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.colMetaData.DataPropertyName = "ExportMetadata";
-            this.colMetaData.HeaderText = "Metadata";
-            this.colMetaData.MinimumWidth = 6;
-            this.colMetaData.Name = "colMetaData";
-            this.colMetaData.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.colMetaData.Width = 70;
-            // 
-            // colAssets
-            // 
-            this.colAssets.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.colAssets.DataPropertyName = "ExportAssets";
-            this.colAssets.HeaderText = "Assets";
-            this.colAssets.MinimumWidth = 6;
-            this.colAssets.Name = "colAssets";
-            this.colAssets.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.colAssets.Width = 54;
-            // 
-            // colApplication
-            // 
-            this.colApplication.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.colApplication.DataPropertyName = "ExportApplication";
-            this.colApplication.HeaderText = "Application";
-            this.colApplication.MinimumWidth = 6;
-            this.colApplication.Name = "colApplication";
-            this.colApplication.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.colApplication.Width = 80;
             // 
             // dataGridViewHeaderCheckBoxColumn1
             // 
@@ -519,6 +470,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.AutoScroll = true;
+            this.panel1.Controls.Add(this.chkESDE);
             this.panel1.Controls.Add(this.groupBox7);
             this.panel1.Controls.Add(this.groupBox6);
             this.panel1.Controls.Add(this.groupBox1);
@@ -531,6 +483,19 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1027, 974);
             this.panel1.TabIndex = 14;
+            // 
+            // chkESDE
+            // 
+            this.chkESDE.AutoSize = true;
+            this.chkESDE.Checked = true;
+            this.chkESDE.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkESDE.Location = new System.Drawing.Point(873, 850);
+            this.chkESDE.Margin = new System.Windows.Forms.Padding(4);
+            this.chkESDE.Name = "chkESDE";
+            this.chkESDE.Size = new System.Drawing.Size(119, 20);
+            this.chkESDE.TabIndex = 16;
+            this.chkESDE.Text = "ES-DE Folders";
+            this.chkESDE.UseVisualStyleBackColor = true;
             // 
             // groupBox7
             // 
@@ -701,6 +666,56 @@
             this.radCopyApplication.Text = "Copy Application";
             this.radCopyApplication.UseVisualStyleBackColor = true;
             // 
+            // colSelected
+            // 
+            this.colSelected.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.colSelected.DataPropertyName = "Selected";
+            this.colSelected.HeaderCheckBox = true;
+            this.colSelected.HeaderText = "";
+            this.colSelected.MinimumWidth = 40;
+            this.colSelected.Name = "colSelected";
+            this.colSelected.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.colSelected.Width = 40;
+            // 
+            // colPlatform
+            // 
+            this.colPlatform.DataPropertyName = "Name";
+            this.colPlatform.HeaderText = "Platform";
+            this.colPlatform.MinimumWidth = 6;
+            this.colPlatform.Name = "colPlatform";
+            this.colPlatform.ReadOnly = true;
+            this.colPlatform.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // colMetaData
+            // 
+            this.colMetaData.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.colMetaData.DataPropertyName = "ExportMetadata";
+            this.colMetaData.HeaderText = "Metadata";
+            this.colMetaData.MinimumWidth = 6;
+            this.colMetaData.Name = "colMetaData";
+            this.colMetaData.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.colMetaData.Width = 70;
+            // 
+            // colAssets
+            // 
+            this.colAssets.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.colAssets.DataPropertyName = "ExportAssets";
+            this.colAssets.HeaderText = "Assets";
+            this.colAssets.MinimumWidth = 6;
+            this.colAssets.Name = "colAssets";
+            this.colAssets.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.colAssets.Width = 54;
+            // 
+            // colApplication
+            // 
+            this.colApplication.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.colApplication.DataPropertyName = "ExportApplication";
+            this.colApplication.HeaderText = "Application";
+            this.colApplication.MinimumWidth = 6;
+            this.colApplication.Name = "colApplication";
+            this.colApplication.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.colApplication.Width = 80;
+            // 
             // frmPegasusExport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -731,6 +746,7 @@
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.groupBox7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPlaylists)).EndInit();
             this.groupBox6.ResumeLayout(false);
@@ -782,15 +798,16 @@
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.DataGridView dgvPlaylists;
         private System.Windows.Forms.CheckBox chkSingleExport;
-        private Controls.DataGridViewHeaderCheckBoxColumn colSelected;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colPlatform;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn colMetaData;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn colAssets;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn colApplication;
         private Controls.DataGridViewHeaderCheckBoxColumn colSelected2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn1;
         private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn2;
         private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn3;
+        private System.Windows.Forms.CheckBox chkESDE;
+        private Controls.DataGridViewHeaderCheckBoxColumn colSelected;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colPlatform;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn colMetaData;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn colAssets;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn colApplication;
     }
 }

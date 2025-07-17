@@ -10,7 +10,6 @@ namespace PegasusExportPlugin.Launchbox
     {
         public bool Selected { get; set; } = true;
         public string Name { get; set; }
-
         public bool ExportAssets { get; set; } = true;
         public bool ExportMetadata { get; set; } = true;
         public bool ExportApplication { get; set; } = true;

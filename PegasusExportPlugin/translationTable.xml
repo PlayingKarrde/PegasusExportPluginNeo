@@ -22,7 +22,7 @@
     </asset>
     <asset>
       <key>Advertisement Flyer - Front</key>
-      <value></value>
+      <value>poster</value>
     </asset>
     <asset>
       <key>Advertisement Flyer - Back</key>
@@ -139,6 +139,10 @@
           <height>430</height>
         </resolution>
       </resolutions>
+    </asset>
+    <asset>
+      <key>Steam Poster</key>
+      <value>poster</value>
     </asset>
     <asset>
       <key>Video</key>

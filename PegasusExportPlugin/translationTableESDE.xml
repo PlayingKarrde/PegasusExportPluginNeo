@@ -107,16 +107,16 @@
     <platform from="Arcade" to="arcade" />
     <platform from="MAME" to="mame" />
     <platform from="FinalBurn Neo" to="fbneo" />
-    <platform from="CPS-1" to="cps1" />
-    <platform from="CPS-2" to="cps2" />
-    <platform from="CPS-3" to="cps3" />
+    <platform from="CPS1" to="cps1" />
+    <platform from="CPS2" to="cps2" />
+    <platform from="CPS3" to="cps3" />
     <platform from="Cave" to="cave" />
-    <platform from="Atomiswave" to="atomiswave" />
-    <platform from="Naomi" to="naomi" />
-    <platform from="Naomi 2" to="naomi2" />
-    <platform from="Naomi GD-ROM" to="naomigd" />
-    <platform from="Model 2" to="model2" />
-    <platform from="Model 3" to="model3" />
+    <platform from="Sammy Atomiswave" to="atomiswave" />
+    <platform from="Sega Naomi" to="naomi" />
+    <platform from="Sega Naomi 2" to="naomi2" />
+    <platform from="Sega Naomi GD-ROM" to="naomigd" />
+    <platform from="Sega Model 2" to="model2" />
+    <platform from="Sega Model 3" to="model3" />
     <platform from="Daphne" to="daphne" />
 
     <!-- Other Consoles -->
